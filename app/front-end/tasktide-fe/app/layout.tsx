@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SiteConfig } from "@/configuration/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TaskTide: Task and project management for ungodly sums of money",
-  description: "Pay more get less!",
+  title: {
+    default: SiteConfig.title,
+    template: `%s | ${SiteConfig.title}`,
+  },
+  description: SiteConfig.description,
 };
 
 export default function RootLayout({
