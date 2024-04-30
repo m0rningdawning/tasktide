@@ -10,7 +10,7 @@ export const Navbar = () => {
         <Logo inHeader={true} />
         <div className="space-x-3 md:w-auto flex items-center justify-between w-full">
           <Button className="bg-green-600 hover:bg-green-800" size="sm" asChild>
-            <Link href="/signup">Get it now</Link>
+            <Link href="/sign-up">Get it now</Link>
           </Button>
           <MiniLogo />
           <Button
@@ -18,7 +18,7 @@ export const Navbar = () => {
             size="sm"
             asChild
           >
-            <Link href="/login">Login</Link>
+            <Link href="/sign-in">Login</Link>
           </Button>
         </div>
       </div>

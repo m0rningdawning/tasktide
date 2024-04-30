@@ -38,7 +38,7 @@ const PromoPage = () => {
         size="lg"
         asChild
       >
-        <Link href="/signup">Sign up now</Link>
+        <Link href="/sign-up">Sign up now</Link>
       </Button>
     </div>
   );
